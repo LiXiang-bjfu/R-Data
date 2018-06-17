@@ -1,0 +1,7 @@
+>install.packages("qqman")
+>library(qqman)
+>x=read.table(file.choose(),header=T,sep=",")
+>head(x)
+>manhattan(x) 	
+>manhattan(x, main = "Manhattan Plot", ylim = c(0, 10), cex = 0.6, cex.axis = 0.9, col = c("blue4", "orange3"), suggestiveline = F, genomewideline = 3, chrlabs = c(1:20, "P", "Q"))
+>qq(x$P,main="Q-Q plot of GWAS p-values",xlim=c(0,6),ylim=c(0,9),pch=18,col="blue4",cex=0.9,las=1)
