@@ -1,0 +1,12 @@
+Sample：
+SNP(名称) CHR(染色体) BP(位置) P值
+A1 B1 CA D1
+A2 B2 C2 D2
+--- --- --- ---
+
+>install.packages("qqman")
+>library(qqman)
+>x=read.table(file.choose(),header=T,sep=",")
+>head(x)
+>manhattan(x) 	
+>manhattan(x, main = "Manhattan Plot", ylim = c(0, 10), cex = 0.6, cex.axis = 0.9, col = c("blue4", "orange3"), suggestiveline = F, genomewideline = 3, chrlabs = c(1:20, "P", "Q"))
