@@ -1,9 +1,0 @@
-
-Data format£ºData1   data2   data3
-                         A1      B1     C1
-                         A2      B2     C2  
-                         A3      B3     C3
-                         A4      B4     C4
-                       ¡­..      ¡­..     ¡­..
-> x=read.table(file.choose(),header=T,sep=",")
->boxplot(x$data1,x$data2,x$data3,names=c("Pop1","Pop2","Pop3"),col=c("blue","red","green"),cex.axis=0.8,cex.main=2.0)

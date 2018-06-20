@@ -1,0 +1,2 @@
+> data1 = read.table("G://Trait-total.csv",header=T, sep=",") 
+> hist(data1$Dehiscent.Rate,xlab="Dehiscent Rate",ylim=c(0,50),main="")
