@@ -1,0 +1,16 @@
+Sample£º
+x y
+A1 B1 
+A2 B2 
+- - 
+
+> install.packages("corrplot")
+>library("corrplot")
+>  x=read.table(file.choose(),header=T,sep=",")
+> y=cor(x)
+> corrplot(y)
+> corrplot(y,method="pie")
+> corrplot(y,method="color",addCoef.col="grey")
+col=colorRampPalette(c("navy", "white", "firebrick3"))
+> corrplot(y,type="upper",col=col(10),tl.pos="d") 
+> corrplot(y,add=TRUE, type="lower", method="number",diag=FALSE,tl.pos="n", cl.pos="n",col=col(10))
