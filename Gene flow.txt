@@ -1,0 +1,10 @@
+Install the Rtools software on your computer in advance, and then run Rto perform the following steps:
+> library("devtools")
+> install_github("diveRsity", "kkeenan02")
+> library(diveRsity)
+> arp2gen("2popSTRmigr.arp")
+>run1 <- divMigrate("2popSTRmigr.gen",plot_network = TRUE, plot_col = "plum3")
+Example£ºhttps://rstudio-pubs-static.s3.amazonaws.com/15759_4973d2a2918548c3af05275e3a55f653.html
+                 http://cmpg.unibe.ch/software/fastsimcoal2/
+Note£º2popSTRmigr.arp was SSR data, Genealex-----Genepop----upload to Genealex-----export Alrequin file£¨'MICROSAT' format!£©£¬2popSTRmigr.arp was plot by R¡£
+Reference£ºGenetic analyses reveal independent domestication origins of the emerging oil crop Paeoniaostii, a tree peony with a long-term cultivation history
